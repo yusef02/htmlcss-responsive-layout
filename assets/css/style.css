@@ -48,8 +48,17 @@
 .col--2-3 {
   width: calc(100% / 3 * 2);
 }
+.col--20 {
+  width: 20%;
+}
 .col--50 {
   width: 50%;
+}
+.col--80 {
+  width: 80%;
+}
+.col--100 {
+  width: 100%;
 }
 .card {
   padding: 0 var(--base-size);
@@ -99,4 +108,26 @@
 #sectionPlanning .card--bg-white {
   background-color: #ffffff;
   padding: var(--m-size);
+}
+
+/* SECTION TESTIMONIALS */
+
+#sectionTestimonials {
+  padding: var(--l-size) 0;
+}
+#sectionTestimonials .container:nth-child(1) {
+  text-align: center;
+}
+#sectionTestimonials .container:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+#sectionTestimonials .container:nth-child(2) .row {
+  width: 100%;
+}
+#sectionTestimonials .card {
+  background-color: var(--secondary-color);
+}
+#sectionTestimonials .card .row {
+  display: flex;
 }
