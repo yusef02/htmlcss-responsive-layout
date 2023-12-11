@@ -159,9 +159,22 @@
   display: flex;
 }
 
+/* SECTION GET STARTED */
+
 #sectionGetStarted {
   background-color: var(--secondary-color);
 }
 #sectionGetStarted .container {
   text-align: center;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: #333333;
+  padding: var(--l-size) 0;
+  text-align: center;
+}
+#footer span {
+  display: block;
 }
