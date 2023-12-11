@@ -69,7 +69,7 @@
 /* SECTION DEMO */
 
 #sectionDemo {
-  padding: 50px 0;
+  padding: var(--l-size) 0;
 }
 #sectionDemo .container .row {
   display: flex;
@@ -83,4 +83,20 @@
 }
 #sectionDemo .card .col--50 {
   padding: 0 var(--base-size);
+}
+
+/* SECTION PLANNING */
+
+#sectionPlanning {
+  background-color: var(--secondary-color);
+  padding: var(--l-size) 0;
+}
+#sectionPlanning .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#sectionPlanning .card--bg-white {
+  background-color: #ffffff;
+  padding: var(--m-size);
 }
