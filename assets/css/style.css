@@ -149,3 +149,19 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+/* SECTION ABOUT US */
+
+#sectionAboutUs {
+  padding: var(--l-size) 0;
+}
+#sectionAboutUs .container {
+  display: flex;
+}
+
+#sectionGetStarted {
+  background-color: var(--secondary-color);
+}
+#sectionGetStarted .container {
+  text-align: center;
+}
