@@ -1,0 +1,27 @@
+@media screen and (max-width: 468px) {
+  .container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  [class^="col"] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  #sectionPlanning .container .row {
+    flex-wrap: wrap;
+  }
+  #sectionPlanning .container .row .col--1-3 {
+    width: 100%;
+  }
+  #sectionBenefits .container .row .col--1-3 {
+    width: 50%;
+  }
+}

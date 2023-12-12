@@ -126,9 +126,9 @@
   display: flex;
   flex-wrap: wrap;
 }
-#sectionTestimonials .container:nth-child(2) .row {
+/* #sectionTestimonials .container:nth-child(2) .row {
   width: 100%;
-}
+}         non necessario dato che la width di base prende tutto lo spazio a prescindere, altrimenti con questa regola prende lo spazio di 100% meno il padding del container  */
 #sectionTestimonials .card {
   background-color: var(--secondary-color);
 }
