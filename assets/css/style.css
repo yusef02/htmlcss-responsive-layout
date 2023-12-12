@@ -1,6 +1,7 @@
 :root {
   --primary-color: #0084fd;
   --secondary-color: #9792e4;
+  --base-color: #4c5d6b;
   --card-bg-color: #b5ddff;
 
   --base-size: 15px;
@@ -75,9 +76,17 @@
   padding: var(--m-size);
 }
 .tag--bg-white {
+  text-decoration: none;
   background-color: white;
   border-radius: 20px;
   color: black;
+  padding: 0.4rem 0.6rem;
+}
+.tag--bg-blue {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  color: white;
   padding: 0.4rem 0.6rem;
 }
 
@@ -121,14 +130,47 @@
 }
 #sectionDemo .card {
   height: 100%;
+  border-radius: 16px;
   background-color: var(--card-bg-color);
+  text-align: center;
 }
 #sectionDemo .card .row {
   display: flex;
+  height: 100%;
 }
 #sectionDemo .card .col--50 {
   padding: 0 var(--base-size);
 }
+#sectionDemo .card__icon {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-top: var(--m-size);
+}
+#sectionDemo .card__title {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-top: var(--m-size);
+}
+#sectionDemo .card__desc {
+  line-height: 1.3rem;
+  color: var(--base-color);
+  margin-top: var(--m-size);
+  margin-bottom: var(--m-size);
+}
+#sectionDemo .card__tag {
+  display: inline-block;
+  /* margin-top: var(--m-size); */
+  margin-bottom: var(--m-size);
+  letter-spacing: 0.2rem;
+}
+#sectionDemo .card .col--50:nth-child(1) {
+  text-align: left;
+}
+#sectionDemo .card .col--50:nth-child(2) {
+  align-self: flex-end;
+}
+/* il problema non è legato alla disposizione flex della riga ma al fatto che la riga figlia di container mantiene un altezza maggiore in quanto il contenuto della card affianco si enstende ancora sotto*/
+/* risolto dando il 100% della heigt alla riga nella card */
 
 /* SECTION PLANNING */
 
