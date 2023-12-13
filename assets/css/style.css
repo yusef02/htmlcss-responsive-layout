@@ -44,6 +44,9 @@
 .w-100 {
   width: 100%;
 }
+.--vertical-centered {
+  vertical-align: center;
+}
 .container {
   max-width: 1040px;
   margin: 0 auto;
@@ -106,7 +109,21 @@
   text-align: center;
   margin: 0 auto;
 }
-.--vertical-centered {
+.--round-frame {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  line-height: 100%;
+  text-align: center;
+}
+.--round-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+
   vertical-align: center;
 }
 
@@ -118,6 +135,7 @@
 
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 #header .container {
@@ -242,6 +260,21 @@
 #sectionTestimonials .container:nth-child(1) {
   text-align: center;
 }
+#sectionTestimonials .section__name {
+  font-weight: 300;
+  color: var(--base-color);
+  margin-bottom: var(--m-size);
+}
+#sectionTestimonials .section__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: var(--m-size);
+}
+#sectionTestimonials .section__desc {
+  margin-bottom: var(--m-size);
+}
+
 #sectionTestimonials .container:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
@@ -250,10 +283,23 @@
   width: 100%;
 }         non necessario dato che la width di base prende tutto lo spazio a prescindere, altrimenti con questa regola prende lo spazio di 100% meno il padding del container  */
 #sectionTestimonials .card {
+  border-radius: 32px;
   background-color: var(--secondary-color);
+  color: white;
 }
 #sectionTestimonials .card .row {
   display: flex;
+}
+#sectionTestimonials .card .col--80 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#sectionTestimonials .card__desc {
+  margin-bottom: var(--m-size);
+}
+#sectionTestimonials .card__testimonialName {
+  font-weight: 700;
 }
 
 /* SECTION FEATURES */
