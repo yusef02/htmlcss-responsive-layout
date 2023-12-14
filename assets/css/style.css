@@ -38,8 +38,7 @@
   display: block;
 }
 .small {
-  font-size: 0.9rem;
-  line-height: 1.8rem;
+  font-size: 0.8rem;
 }
 .w-100 {
   width: 100%;
@@ -96,6 +95,13 @@
 .tag--bg-blue {
   text-decoration: none;
   background-color: var(--primary-color);
+  border-radius: 20px;
+  color: white;
+  padding: 0.4rem 0.6rem;
+}
+.tag--bg-purple {
+  text-decoration: none;
+  background-color: var(--secondary-color);
   border-radius: 20px;
   color: white;
   padding: 0.4rem 0.6rem;
@@ -238,6 +244,10 @@
   font-size: 1.5rem;
   margin-bottom: var(--m-size);
 }
+#sectionPlanning .col--40 .card__desc {
+  line-height: 1.8rem;
+}
+
 #sectionPlanning .col--1-3 .card--bg-white {
   text-align: center;
 }
@@ -315,6 +325,34 @@
   display: flex;
   flex-wrap: wrap;
 }
+#sectionFeatures .section__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: var(--m-size);
+}
+#sectionFeatures .card {
+  color: var(--secondary-color);
+  border-radius: 20px;
+}
+#sectionFeatures .card__number {
+  margin-bottom: var(--s-size);
+  font-size: 4rem;
+}
+#sectionFeatures .card__title {
+  margin-bottom: var(--s-size);
+  font-size: 1.3rem;
+}
+#sectionFeatures .card__desc {
+  margin-bottom: var(--s-size);
+  color: var(--base-color);
+}
+#sectionFeatures .card__tag {
+  margin-bottom: var(--s-size);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  letter-spacing: 0.2rem;
+}
 
 /* SECTION ABOUT US */
 
@@ -324,14 +362,78 @@
 #sectionAboutUs .container {
   display: flex;
 }
+#sectionAboutUs .col--2-3 .section__title {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: var(--m-size);
+}
+#sectionAboutUs .col--2-3 .section__desc {
+  margin-bottom: var(--m-size);
+  line-height: 2rem;
+}
+#sectionAboutUs .col--1-3 .card {
+  position: relative;
+}
+#sectionAboutUs .col--1-3 .card__icon {
+  color: var(--secondary-color);
+  font-size: 7rem;
+  position: absolute;
+  right: 0;
+}
+#sectionAboutUs .col--1-3 .--round-frame {
+  margin-bottom: var(--s-size);
+}
+#sectionAboutUs .col--1-3 .card__title {
+  margin-bottom: var(--s-size);
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+}
+#sectionAboutUs .col--1-3 .card__tag {
+  display: inline-block;
+}
 
 /* SECTION GET STARTED */
 
 #sectionGetStarted {
   background-color: var(--secondary-color);
+  padding: var(--l-size) 0;
 }
 #sectionGetStarted .container {
+  display: flex;
+  justify-content: center;
   text-align: center;
+}
+#sectionGetStarted .col--2-3 .section__name {
+  font-weight: 300;
+  color: white;
+  margin-bottom: var(--m-size);
+}
+#sectionGetStarted .col--2-3 .section__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: var(--m-size);
+}
+#sectionGetStarted .col--2-3 .highlighted {
+  color: #fdc15f;
+  font-size: 4rem;
+  margin-bottom: var(--m-size);
+}
+#sectionGetStarted .col--2-3 .section__desc {
+  margin-bottom: var(--m-size);
+}
+#sectionGetStarted .col--2-3 .tag--bg-white {
+  display: inline-block;
+  margin-bottom: var(--m-size);
+  padding: 1.5rem 6rem;
+  border-radius: 68px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+#sectionGetStarted .col--2-3 .caption {
+  font-size: 0.8rem;
 }
 
 /* FOOTER */
@@ -341,6 +443,12 @@
   padding: var(--l-size) 0;
   text-align: center;
 }
-#footer span {
-  display: block;
+#footer .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+#footer .col--40 span {
+  margin-bottom: var(--l-size);
 }
