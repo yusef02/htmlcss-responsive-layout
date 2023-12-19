@@ -151,6 +151,11 @@
   padding-top: var(--base-size);
   padding-bottom: var(--base-size);
 }
+#header .header__nav .fa-solid.fa-bars {
+  display: none;
+  color: white;
+  font-size: 2rem;
+}
 .header__nav__tagsList {
   list-style: none;
   display: flex;

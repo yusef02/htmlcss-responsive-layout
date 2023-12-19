@@ -1,13 +1,46 @@
+:root {
+  --primary-color: #0084fd;
+  --secondary-color: #9792e4;
+  --base-color: #4c5d6b;
+  --card-bg-color: #b5ddff;
+
+  --base-size: 15px;
+  --s-size: 20px;
+  --m-size: 30px;
+  --l-size: 50px;
+  --xl-size: 70px;
+  --xxl-size: 100px;
+  --xxxl-size: 120px;
+}
+
 @media screen and (max-width: 468px) {
   .container {
+    padding: 0 var(--m-size);
+
     width: 100%;
     flex-wrap: wrap;
   }
   .row {
+    margin: 0 calc(-1 * var(--m-size));
+
     flex-wrap: wrap;
   }
   [class^="col"] {
-    width: 100%;
+    padding: var(--m-size);
+
+    width: 100% !important;
+  }
+  .card {
+    padding: 0 var(--m-size);
+  }
+  .card--bg-white {
+    padding: var(--m-size);
+  }
+  #sectionDemo .card .col--50 {
+    padding: 0 var(--m-size);
+  }
+  #sectionAboutUs .col--1-3 .card__icon {
+    font-size: 25vw !important;
   }
 }
 
@@ -15,13 +48,25 @@
   .container {
     width: 100%;
   }
+
+  /* HEADER */
+  #header .header__nav .fa-solid.fa-bars {
+    display: inline-block;
+  }
+  #header .header__nav__tagsList {
+    display: none;
+  }
+  /* MAIN */
   #sectionPlanning .container .row {
     flex-wrap: wrap;
   }
   #sectionPlanning .container .row [class^="col"] {
     width: 100%;
   }
-  #sectionBenefits .container .row .col--1-3 {
+  #sectionFeatures .container .row .col--1-3 {
     width: 50%;
+  }
+  #sectionAboutUs .col--1-3 .card__icon {
+    font-size: 8vw;
   }
 }
